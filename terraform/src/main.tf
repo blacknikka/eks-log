@@ -36,3 +36,10 @@ module "elasticsearch" {
 
   base_name = var.base_name
 }
+
+# ECR
+module "bff_ecr" {
+  source = "./modules/ecr"
+
+  app_name = "app"
+}
