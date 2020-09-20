@@ -1,3 +1,3 @@
 output "test" {
-  value = module.eks
+  value = module.network.vpc_main.id
 }
