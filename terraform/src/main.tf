@@ -30,3 +30,9 @@ module "eks" {
   subnet2   = module.network.subnet_c
   vpc_main  = module.network.vpc_main
 }
+
+module "elasticsearch" {
+  source = "./modules/elasticsearch"
+
+  base_name = var.base_name
+}
