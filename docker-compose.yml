@@ -1,5 +1,14 @@
 version: "3"
 services:
+  app:
+    build: ./app
+    tty: true
+    command: /bin/ash
+    ports:
+      - 8080:8080
+    working_dir: /go/src/github.com/blacknikka/eks-log/
+    volumes:
+      - "./app/src:/go/src/github.com/blacknikka/eks-log/"
   tf:
     build: ./terraform
     tty: true
