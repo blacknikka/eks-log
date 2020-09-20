@@ -17,6 +17,7 @@ services:
     privileged: true
     volumes:
       - "./k8s/src:/k8s"
+      - "./k8s/config:/root/.kube"
     environment:
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
