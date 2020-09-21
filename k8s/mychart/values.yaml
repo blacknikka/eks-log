@@ -1,0 +1,8 @@
+containerRegistory: registry.hub.docker.com/
+app:
+  appName: myapp
+  appNameSpace: app
+  appImage: repo_app
+  appImageTag: latest
+  appPort: 8080
+  appServicePort: 80
