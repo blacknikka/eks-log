@@ -1,6 +1,7 @@
 resource "aws_eks_cluster" "app" {
-  name     = "${var.base_name}-eks"
-  role_arn = aws_iam_role.eks_role.arn
+  name                      = "${var.base_name}-eks"
+  enabled_cluster_log_types = ["api"]
+  role_arn                  = aws_iam_role.eks_role.arn
 
   vpc_config {
     subnet_ids = [var.subnet1.id, var.subnet2.id]

@@ -6,3 +6,6 @@ app:
   appImageTag: latest
   appPort: 8080
   appServicePort: 80
+region: ap-northeast-1
+log:
+  eksName: "/aws/eks/eks-log-eks/cluster"
