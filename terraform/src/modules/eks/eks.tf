@@ -16,7 +16,7 @@ resource "aws_eks_cluster" "app" {
 
 # cloudwatch
 resource "aws_cloudwatch_log_group" "test_eks" {
-  name              = "/aws/eks/${var.base_name}_eks/cluster"
+  name              = "/aws/eks/${var.base_name}-eks/cluster"
   retention_in_days = 5
 }
 
